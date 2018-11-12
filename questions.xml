@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questions>
+
+  <stage1 category="stage1">
+    <question lang="en">The Plaka is the oldest quarter of which city?</question>
+    <a>Athens</a>
+    <b>Prague</b>
+    <c>Rome</c>
+    <d>Vienna</d>
+  </stage1>
+
+  <stage1 category="stage1">
+    <question lang="en">What is an axolotl?</question>
+    <a>A nerve in the brain</a>
+    <b>A multi-axled vehicle</b>
+    <c>A type of mortice lock</c>
+    <d>A species of salamander</d>
+  </stage1>
+
+  <stage1 category="stage1">
+    <question lang="en">The Panama Canal was officially opened by which US president?</question>
+    <a>Calvin Coolidge</a>
+    <b>Herbert Hoover</b>
+    <c>Theodore Roosevelt</c>
+    <d>Woodrow Wilson</d>
+  </stage1>
+
+  <stage1 category="stage1">
+    <question lang="en">In which opera did Maria Callas make her last appearance at Covent Garden?</question>
+    <a>‘Carmen’</a>
+    <b>‘Tosca’</b>
+    <c>‘Madame Butterfly’</c>
+    <d>‘La Boheme’</d>
+  </stage1>
+
+  <stage1 category="stage1">
+    <question lang="en">After Adam, Eve, Cain and Abel who is the next person mentioned in the Bible?</question>
+    <a>Enoch</a>
+    <b>Jubal</b>
+    <c>Lamech</c>
+    <d>Zillah</d>
+  </stage1>
+
+  <stage1 category="stage1">
+    <question lang="en">What is a kudzu?</question>
+    <a>Antelope</a>
+    <b>Bird</b>
+    <c>Jewish settlement</c>
+    <d>Climbing plant</d>
+  </stage1>
+
+  <stage1 category="stage1">
+    <question lang="en">Outlawed from 1603 to 1774, which Scottish clan was known as the ‘Faceless Clan’?</question>
+    <a>Campbell</a>
+    <b>MacGregor</b>
+    <c>MacLeod</c>
+    <d>MacDonald</d>
+  </stage1>
+
+  <stage1 category="stage1">
+    <question lang="en">From which country does tennis player Andres Gomez, winner of the 1990 French Championships, come?</question>
+    <a>Ecuador</a>
+    <b>Peru</b>
+    <c>Portugal</c>
+    <d>Spain</d>
+  </stage1>
+
+  <stage1 category="stage1">
+    <question lang="en">Which US city is located on the Maumee River at Lake Erie?</question>
+    <a>Detroit</a>
+    <b>Toledo</b>
+    <c>Cleveland</c>
+    <d>Buffalo</d>
+  </stage1>
+
+  <stage1 category="stage1">
+    <question lang="en">Lisbon stands at the mouth of which river?</question>
+    <a>Seine</a>
+    <b>Duoro</b>
+    <c>Rio Grande</c>
+    <d>Tagus</d>
+  </stage1>
+
+  <stage1 category="stage1">
+    <question lang="en">What is the longest river in France?</question>
+    <a>Loire</a>
+    <b>Seine</b>
+    <c>Rhone</c>
+    <d>Gironde</d>
+  </stage1>
+
+  <stage1 category="stage1">
+    <question lang="en">In which Australian state is Darwin?</question>
+    <a>Queensland</a>
+    <b>Western Australia</b>
+    <c>Northern Territory</c>
+    <d>Tasmania</d>
+  </stage1>
+
+  <stage1 category="stage1">
+    <question lang="en"> Apart from Rome, how many cities in Italy have a population of over one million?</question>
+    <a>Three: Milan, Naples and Turin</a>
+    <b>Two: Genoa and Venice</b>
+    <c>One:Ancona</c>
+    <d>Four:Florence, Bologna, Trieste and Palermo</d>
+  </stage1>
+
+  <stage1 category="stage1">
+    <question lang="en">What in America is the Palmetto state?</question>
+    <a>Florida</a>
+    <b>Louisiana</b>
+    <c>Alabama</c>
+    <d>South Carolina</d>
+  </stage1>
+
+  <stage1 category="stage1">
+    <question lang="en">In which ocean is Madagascar?</question>
+    <a>Atlantic</a>
+    <b>Pacific</b>
+    <c>Indian</c>
+    <d>Arctic</d>
+  </stage1>
+
+  <stage1 category="stage1">
+    <question lang="en">In which US city is the Sears Tower?</question>
+    <a>Boston</a>
+    <b>Chicago</b>
+    <c>St. Louis</c>
+    <d>San Francisco</d>
+  </stage1>
+
+  <stage1 category="stage1">
+    <question lang="en">Galena is an ore of which metal?</question>
+    <a>Copper</a>
+    <b>Lead</b>
+    <c>Zinc</c>
+    <d>Iron</d>
+  </stage1>
+
+  <stage1 category="stage1">
+    <question lang="en">Which sign of the zodiac comes between Leo and Libra?</question>
+    <a>Virgo</a>
+    <b>Taurus</b>
+    <c>Aries</c>
+    <d>Capricorn</d>
+  </stage1>
+
+  <stage1 category="stage1">
+    <question lang="en">Which planet is said to influence the way we communicate?</question>
+    <a>Venus</a>
+    <b>Mercury</b>
+    <c>Mars</c>
+    <d>Saturn</d>
+  </stage1>
+
+  <stage1 category="stage1">
+    <question lang="en">Are you a fire, air, water or earth sign if you were born under Aquarius?</question>
+    <a>Fire</a>
+    <b>Water</b>
+    <c>Air</c>
+    <d>Earth</d>
+  </stage1>
+
+  <stage1 category="stage1">
+    <question lang="en">Which star sign is the first sign of the zodiac?</question>
+    <a>Pisces</a>
+    <b>Capricorn</b>
+    <c>Taurus</c>
+    <d>Aries</d>
+  </stage1>
+
+  <stage1 category="stage1">
+    <question lang="en">If you were born on New Year’s Day, which is your astrological sign?</question>
+    <a>Aries</a>
+    <b>Cancer</b>
+    <c>Capricorn</c>
+    <d>Leo</d>
+  </stage1>
+
+  <stage1 category="stage1">
+    <question lang="en">What is the ruling planet of Scorpio?</question>
+    <a>Pluto</a>
+    <b>Venus</b>
+    <c>Earth</c>
+    <d>Saturn</d>
+  </stage1>
+
+  <stage1 category="stage1">
+    <question lang="en">Pisces and Scorpio are two of the water signs, name the third.</question>
+    <a>Aquarius</a>
+    <b>Sagittarius</b>
+    <c>Cancer</c>
+    <d>Leo</d>
+  </stage1>
+
+  <stage1 category="stage1">
+    <question lang="en">At which sport in the 1960s did Peggy Fleming become a household name?</question>
+    <a>Equestrian</a>
+    <b>Tennis</b>
+    <c>Sprinting</c>
+    <d>Figure skating</d>
+  </stage1>
+
+
+
+
+
+
+
+
+
+
+  <stage2 category="stage2">
+    <question lang="en">Who revolutionised high jumping when he used his flop technique to win an Olympic gold medal in Mexico in 1968?</question>
+    <a>Dick Fosbury</a>
+    <b>Mick Cadbury</b>
+    <c>Nick Fosdyke</c>
+    <d>Vic Foster</d>
+  </stage2>
+
+  <stage2 category="stage2">
+    <question lang="en">What nationality was tennis player John Newcombe?</question>
+    <a>British</a>
+    <b>Canadian</b>
+    <c>Irish</c>
+    <d>Australian</d>
+  </stage2>
+
+  <stage2 category="stage2">
+    <question lang="en">About which golfer did the great Bobby Jones remark : “He is playing an entirely different game – a game I’m not even familiar with.” ?</question>
+    <a>Gary Player</a>
+    <b>Tiger Woods</b>
+    <c>Jack Nicklaus</c>
+    <d>Peter Allis</d>
+  </stage2>
+
+  <stage2 category="stage2">
+    <question lang="en">Which tennis player, famous for her two-handed backhand and baseline-dominated play was nicknamed ‘The Ice Maiden’?</question>
+    <a>Steffi Graf</a>
+    <b>Chris Evert</b>
+    <c>Evonne Cawley</c>
+    <d>Kim Clijsters</d>
+  </stage2>
+
+  <stage2 category="stage2">
+    <question lang="en">Who was the Argentinian racing driver ( 1911 – 1995 ) who won five world championships and was team leader of Mercedes-Benz, Alfa Romeo, Ferrari and Maserati?</question>
+    <a>Juan Manuel Fangio</a>
+    <b>Alberto Ascari</b>
+    <c>Giuseppe Farina</c>
+    <d>Jose Gonzales</d>
+  </stage2>
+
+  <stage2 category="stage2">
+    <question lang="en">Which Italian jockey rode his first winner Lizzy Hare, at Goodwood in 1987?</question>
+    <a>Giovanni Forte</a>
+    <b>Diego Dettori</b>
+    <c>Uto Viaggi</c>
+    <d>Frankie Dettori</d>
+  </stage2>
+
+
+  <stage2 category="stage2">
+    <question lang="en">With which baseball team did Jose DiMaggio achieve icon status in the 1940s?</question>
+    <a>Chicago Bears</a>
+    <b>New York Yankees</b>
+    <c>Baltimore Batters</c>
+    <d>Cleveland Steelers</d>
+  </stage2>
+
+  <stage2 category="stage2">
+    <question lang="en">What type of cheese is Stilton?</question>
+    <a>Blue</a>
+    <b>Green</b>
+    <c>Hard</c>
+    <d>Mouldy</d>
+  </stage2>
+
+  <stage2 category="stage2">
+    <question lang="en">What do you add to milk to make porridge?</question>
+    <a>Cruel</a>
+    <b>Oats</b>
+    <c>Sugar</c>
+    <d>Whisky</d>
+  </stage2>
+
+
+  <stage2 category="stage2">
+    <question lang="en">What is minestrone?</question>
+    <a>Cheese</a>
+    <b>Noodles</b>
+    <c>A type of potato</c>
+    <d>Soup</d>
+  </stage2>
+
+  <stage2 category="stage2">
+    <question lang="en"> What is bottled tomato sauce called?</question>
+    <a>Brown sauce</a>
+    <b>HP sauce</b>
+    <c>Ketchup</c>
+    <d>Piccalilli</d>
+  </stage2>
+
+  <stage2 category="stage2">
+    <question lang="en">What colour is gin?</question>
+    <a>Colourless</a>
+    <b>Blue</b>
+    <c>Green</c>
+    <d>Yellow</d>
+  </stage2>
+
+
+  <stage2 category="stage2">
+    <question lang="en">Which fruit is covered with toffee at a fairground?</question>
+    <a>Banana</a>
+    <b>Apple</b>
+    <c>Carrot</c>
+    <d>Pear</d>
+  </stage2>
+
+  <stage2 category="stage2">
+    <question lang="en">Which nuts are used to make marzipan?</question>
+    <a>Almonds</a>
+    <b>Chestnuts</b>
+    <c>Hazelnuts</c>
+    <d>Walnuts</d>
+  </stage2>
+
+  <stage2 category="stage2">
+    <question lang="en">What meat dish is Cumberland famous for?</question>
+    <a>Bacon</a>
+    <b>Deep-fried Mars Bars</b>
+    <c>Ribs</c>
+    <d>Sausage</d>
+  </stage2>
+
+
+  <stage2 category="stage2">
+    <question lang="en"> Which British monarch succeeded Queen Victoria?</question>
+    <a>Elizabeth II</a>
+    <b>Edward VI</b>
+    <c>Edward VII</c>
+    <d>George VII</d>
+  </stage2>
+
+  <stage2 category="stage2">
+    <question lang="en">Richard III died at which battle?</question>
+    <a>Bosworth Field</a>
+    <b>Barnet</b>
+    <c>Hastings</c>
+    <d>York</d>
+  </stage2>
+
+  <stage2 category="stage2">
+    <question lang="en">Who was the last viceroy of India?</question>
+    <a>Clive</a>
+    <b>George VI</b>
+    <c>Prince Louis of Battenburg</c>
+    <d>Lord Louis Mountbatten</d>
+  </stage2>
+
+
+  <stage2 category="stage2">
+    <question lang="en">Which English monarch married Eleanor of Aquitaine?</question>
+    <a>Henry II</a>
+    <b>Henry IV</b>
+    <c>Henry VI</c>
+    <d>Henry VIII</d>
+  </stage2>
+
+  <stage2 category="stage2">
+    <question lang="en">Who was the last wife of Henry VIII?</question>
+    <a>Anne of Cleves</a>
+    <b>Catherine of Aragon</b>
+    <c>Catherine Howard</c>
+    <d>Catherine Parr</d>
+  </stage2>
+
+  <stage2 category="stage2">
+    <question lang="en">Which country did Britain fight in the War of Jenkins’ Ear?</question>
+    <a>France</a>
+    <b>Ireland</b>
+    <c>Spain</c>
+    <d>Wales</d>
+  </stage2>
+
+
+  <stage2 category="stage2">
+    <question lang="en">Which King George did Prince Regent become?</question>
+    <a>George IV</a>
+    <b>George III</b>
+    <c>George II</c>
+    <d>George I</d>
+  </stage2>
+
+  <stage2 category="stage2">
+    <question lang="en">At the Siege of Mafeking, who led the British forces?</question>
+    <a>Robert Baden-Powell</a>
+    <b>Colonel B. T. Mahon</b>
+    <c>Fieldmarshal Bernard Montgomery</c>
+    <d>Louis Mountbatten</d>
+  </stage2>
+
+  <stage2 category="stage2">
+    <question lang="en">The House of Lancaster kings were all called what?</question>
+    <a>Charles</a>
+    <b>Edward</b>
+    <c>George</c>
+    <d>Henry</d>
+  </stage2>
+
+  <stage2 category="stage2">
+    <question lang="en">Apart from Mad George, which kinder nickname did George III have?</question>
+    <a>Big George</a>
+    <b>Farmer Giles</b>
+    <c>Farmer George</c>
+    <d>Happy George</d>
+  </stage2>
+
+
+
+
+
+
+
+
+
+
+
+
+  <stage3 category="stage3">
+    <question lang="en">n the year 1900 in the U.S. what were the most popular first names given to boy and girl babies?</question>
+    <a>William and Elizabeth</a>
+    <b>Joseph and Catherine</b>
+    <c>John and Mary</c>
+    <d>George and Anne</d>
+  </stage3>
+  <stage3 category="stage3">
+    <question lang="en">When did the Liberty Bell get its name?</question>
+    <a>when it was made, in 1701</a>
+    <b>when it rang on July 4, 1776</b>
+    <c>in the 19th century, when it became a symbol of the abolition of slavery</c>
+    <d>none of the above</d>
+  </stage3>
+  <stage3 category="stage3">
+    <question lang="en">In the Roy Rogers -Dale Evans Museum, you will find Roy and Dales stuffed horses. Roy's horse was named Trigger, which was Dales horse?</question>
+    <a>Buttermilk</a>
+    <b>Daisy</b>
+    <c>Scout</c>
+    <d>Tulip</d>
+  </stage3>
+  <stage3 category="stage3">
+    <question lang="en">The Daniel Boon museum at the home where he died can best be described how?</question>
+    <a>a log cabin in Kentucky</a>
+    <b>a two-story clapboard house in Tennessee</b>
+    <c>a four-story Georgian-style home in Missouri</c>
+    <d>a three story brick house in Arkansas</d>
+  </stage3>
+  <stage3 category="stage3">
+    <question lang="en">Which of the following items was owned by the fewest U.S. homes in 1990?</question>
+    <a>home computer</a>
+    <b>compact disk player</b>
+    <c>cordless phone</c>
+    <d>dishwasher</d>
+  </stage3>
+  <stage3 category="stage3">
+    <question lang="en">Who holds the record for the most victories in a row on the professional golf tour?</question>
+    <a>Jack Nicklaus</a>
+    <b>Arnold Palmer</b>
+    <c>Byron Nelson</c>
+    <d>Ben Hogan</d>
+  </stage3>
+  <stage3 category="stage3">
+    <question lang="en">Who is third behind Hank Aaron and Babe Ruth in major league career home runs?</question>
+    <a>Reggie Jackson</a>
+    <b>Harmon Killebrew</b>
+    <c>Willie Mays</c>
+    <d>Frank Robinson</d>
+  </stage3>
+  <stage3 category="stage3">
+    <question lang="en">In 1990, in what percentage of U.S. married couples did the wife earn more money than the husband?</question>
+    <a>8</a>
+    <b>18</b>
+    <c>38</c>
+    <d>58</d>
+  </stage3>
+  <stage3 category="stage3">
+    <question lang="en">During the 1980s for six consecutive years what breed of dog was the most popular in the U.S.?</question>
+    <a>Cocker spaniel</a>
+    <b>German shepherd</b>
+    <c>Labrador retriever</c>
+    <d>Poodle</d>
+  </stage3>
+  <stage3 category="stage3">
+    <question lang="en">In 1985, five percent of U.S. households had telephone answering machines. By 1990 what percentage of homes had answering machines?</question>
+    <a>10 percent</a>
+    <b>15 percent</b>
+    <c>31 percent</c>
+    <d>51 percent</d>
+  </stage3>
+  <stage3 category="stage3">
+    <question lang="en">The first black American pictured on a U.S. postage stamp was who?</question>
+    <a>Frederick Douglass</a>
+    <b>Booker T. Washington</b>
+    <c>Louis Armstrong</c>
+    <d>Joe Louis</d>
+  </stage3>
+  <stage3 category="stage3">
+    <question lang="en">What did the "D" in "D-Day" stand for?</question>
+    <a>doom</a>
+    <b>day</b>
+    <c>Dwight </c>
+    <d>Dunkirk</d>
+  </stage3>
+  <stage3 category="stage3">
+    <question lang="en">The Brownie Box Camera introduced by Eastman Kodak in 1900 had a retail price of what?</question>
+    <a>$1</a>
+    <b>$5</b>
+    <c>$10</c>
+    <d>$20</d>
+  </stage3>
+  <stage3 category="stage3">
+    <question lang="en">Which of these characters turned 40 years old in 1990?</question>
+    <a>Charlie Brown</a>
+    <b>Bugs Bunny</b>
+    <c>Mickey Mouse</c>
+    <d>Fred Flintstone</d>
+  </stage3>
+  <stage3 category="stage3">
+    <question lang="en">The Philadelphia mint started putting a "P" mint mark on quarters when?</question>
+    <a>1960</a>
+    <b>1980</b>
+    <c>never</c>
+    <d>1930</d>
+  </stage3>
+  <stage3 category="stage3">
+    <question lang="en">Before becoming George Bush's Secretary of Defense, what was Dick Cheney's position?</question>
+    <a>congressman from Wyoming</a>
+    <b>governor of New Hampshire</b>
+    <c>secretary of defense under Ronald Reagan</c>
+    <d>none of the above</d>
+  </stage3>
+  <stage3 category="stage3">
+    <question lang="en">When Mt. St. Helens erupted on May 18, 1980, how many people were killed?</question>
+    <a>1</a>
+    <b>57</b>
+    <c>571</c>
+    <d>13500</d>
+  </stage3>
+  <stage3 category="stage3">
+    <question lang="en">In J. Edgar Hoover, what did the J stand for?</question>
+    <a>James</a>
+    <b>John</b>
+    <c>Joseph</c>
+    <d>Josh</d>
+  </stage3>
+  <stage3 category="stage3">
+    <question lang="en">Florence Nightingale became known as "the Lady With the Lamp" during which war?</question>
+    <a>American Civil War</a>
+    <b>Crimean War</b>
+    <c>World War I</c>
+    <d>None of the above</d>
+  </stage3>
+  <stage3 category="stage3">
+    <question lang="en">What year was it that the Census Bureau first reported that a majority of new mothers  were remaining in the new job market?</question>
+    <a>1968</a>
+    <b>1978</b>
+    <c>1988</c>
+    <d>1998</d>
+  </stage3>
+  <stage3 category="stage3">
+    <question lang="en"></question>
+    <a>Athens</a>
+    <b>Prague</b>
+    <c>Rome</c>
+    <d>Vienna</d>
+  </stage3>
+  <stage3 category="stage3">
+    <question lang="en"></question>
+    <a>Athens</a>
+    <b>Prague</b>
+    <c>Rome</c>
+    <d>Vienna</d>
+  </stage3>
+  <stage3 category="stage3">
+    <question lang="en"></question>
+    <a>Athens</a>
+    <b>Prague</b>
+    <c>Rome</c>
+    <d>Vienna</d>
+  </stage3>
+  <stage3 category="stage3">
+    <question lang="en"></question>
+    <a>Athens</a>
+    <b>Prague</b>
+    <c>Rome</c>
+    <d>Vienna</d>
+  </stage3>
+  <stage3 category="stage3">
+    <question lang="en"></question>
+    <a>Athens</a>
+    <b>Prague</b>
+    <c>Rome</c>
+    <d>Vienna</d>
+  </stage3>
+
+
+
+
+</questions>
