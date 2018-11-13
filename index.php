@@ -6,8 +6,8 @@
   <title>Game Homepage</title>
   <meta name="description" content="">
   <meta name="keywords" content="game, questions, score, levels, trivia">
-  <link rel="shortcut icon" href="favicon6.ico" type="image/x-icon">
-  <link rel="icon" href="favicon6.ico" type="image/x-icon">
+  <!-- <link rel="shortcut icon" href="favicon6.ico" type="image/x-icon">
+  <link rel="icon" href="favicon6.ico" type="image/x-icon"> -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
