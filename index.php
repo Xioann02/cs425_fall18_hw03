@@ -64,11 +64,11 @@
       echo"</form></div>";
       $q="(1)QUESTION: ";
       $myfile = fopen("result.txt", "a");
-      fwrite($myfile, "----WELCOME TO QUESTION GAME!----" );
-      fwrite($myfile,PHP_EOL);
-      fwrite($myfile, "      --Game results--" );
-      fwrite($myfile,PHP_EOL);
-      fwrite($myfile,PHP_EOL);
+      // fwrite($myfile, "----WELCOME TO GAME!----" );
+      // fwrite($myfile,PHP_EOL);
+      // fwrite($myfile, "      --Game results--" );
+      // fwrite($myfile,PHP_EOL);
+      // fwrite($myfile,PHP_EOL);
       fwrite($myfile, $q );
       fwrite($myfile, $xml->stage2[$rand]->question);
       fwrite($myfile,PHP_EOL);
@@ -186,13 +186,40 @@
               fclose($myfile);
 
 
-              echo"<div class="">
-              <form  method='post' action='save.php' >
-              <input type='radio' name='answer' value='yes'>
-              <input type='radio' name='answer' value='no'>
-              </form>
-              </div>"
+?>
+<div class="result">
+  <?php
+              $file=fopen("result.txt","r" );
 
+              while(!feof($file))
+                {
+                echo "<div class='question'>".fgets($file). "<br></div>";
+                echo "<div class=''>".fgets($file). "<br></div>";
+                echo "<div class=''>".fgets($file). "<br></div>";
+                echo "<div class=''>".fgets($file). "<br></div>";
+                echo "<div class=''>".fgets($file). "<br></div>";
+                echo "<div class=''>".fgets($file). "<br></div>";
+                echo "<div class=''>".fgets($file). "<br></div>";
+                echo "<div class=''>".fgets($file). "<br></div>";
+
+
+                }
+                fclose($file);
+                ?>
+              </div>
+              <?php
+
+              echo"
+
+              <div class='start'>
+              <form  method='post' action='save.php' >
+              <div >Do you want to save your score?</div>
+              <input type='input' name='nickname' placeholder='Your nickname..'>
+              <button>SAVE</button>
+              <button>NO THANKS</button>
+              </form>
+              </div>";
+              file_put_contents("result.txt", "");
               file_put_contents("game.txt", "");
               file_put_contents("score.txt", "");
               file_put_contents("start.txt", "");

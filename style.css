@@ -12,6 +12,7 @@ a{
   width:100%;
   background-color: black;
   opacity:0.9;
+  top: 0px;
 }
 .option_menu{
   font-family: Montserrat, Arial;
@@ -65,4 +66,13 @@ footer{
 .start{
   margin-top:200px;
   margin-bottom:200px;
+}
+
+.result{
+  margin-left: 10%;
+  margin-top:100px;
+}
+
+.question{
+font-style: italic;
 }
