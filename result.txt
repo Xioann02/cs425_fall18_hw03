@@ -1,0 +1,67 @@
+﻿----WELCOME TO QUESTION GAME!----
+      --Game results--
+
+(1)QUESTION: What do you add to milk to make porridge?
+YOUR ANSWER: 
+CORRECT ANSWER: b
+LEVEL: 2
+SCORE OF CURRENT LEVEL: 0  -Your anser was wrong!
+_________________________________________
+
+
+(2)QUESTION: Are you a fire, air, water or earth sign if you were born under Aquarius?
+YOUR ANSWER: d
+CORRECT ANSWER: d
+LEVEL: 1
+SCORE OF CURRENT LEVEL: 1  -Your anser was right!
+_________________________________________
+
+
+(3)QUESTION: Apart from Mad George, which kinder nickname did George III have?
+YOUR ANSWER: b
+CORRECT ANSWER: c
+LEVEL: 2
+SCORE OF CURRENT LEVEL: 0  -Your anser was wrong!
+_________________________________________
+
+
+(4)QUESTION: Outlawed from 1603 to 1774, which Scottish clan was known as the ‘Faceless Clan’?
+YOUR ANSWER: b
+CORRECT ANSWER: b
+LEVEL: 1
+SCORE OF CURRENT LEVEL: 1  -Your anser was right!
+_________________________________________
+
+
+(5)QUESTION: What do you add to milk to make porridge?
+YOUR ANSWER: d
+CORRECT ANSWER: b
+LEVEL: 2
+SCORE OF CURRENT LEVEL: 0  -Your anser was wrong!
+_________________________________________
+
+
+TOTAL SCORE: 2
+(Max score: 12) 
+----WELCOME TO QUESTION GAME!----
+      --Game results--
+
+(1)QUESTION: What meat dish is Cumberland famous for?
+YOUR ANSWER: 
+CORRECT ANSWER: d
+LEVEL: 2
+SCORE OF CURRENT LEVEL: 0  -Your anser was wrong!
+_________________________________________
+
+
+(2)QUESTION: What is the longest river in France?
+YOUR ANSWER: c
+CORRECT ANSWER: a
+LEVEL: 1
+SCORE OF CURRENT LEVEL: 0  -Your anser was wrong!
+_________________________________________
+
+
+(3)QUESTION: What is an axolotl?
+TOTAL SCORE: 0
+(Max score: 12) 
