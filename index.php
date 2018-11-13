@@ -22,7 +22,7 @@
     <div class="title">WELCOME TO QUESTIONS GAME</div>
     <form  method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" >
       <button name="start" class="sub title">START</button></form>
-      <img class="welcome-image" src="">
+      <!-- <img class="welcome-image" src=""> -->
     </div>
 
     <?php
@@ -40,6 +40,7 @@
       // echo"\nCOUNTER: ".$counter;
       // echo"\nRAND: ".$rand;
   if($start==1){
+echo "QUESTION: 1\n/5";
 
     $file = fopen("score.txt", "w");
     fwrite($file, 0);
