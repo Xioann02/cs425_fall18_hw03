@@ -1,28 +1,32 @@
 body{
   overflow-x: hidden;
-  background-color: pink;
   margin:0px;
+  font-family: Montserrat, Arial;
+
 }
+
 a{
   text-decoration: none;
 }
 .menu{
   position:fixed;
-  height:100px;
+  height:80px;
   width:100%;
   background-color: black;
   opacity:0.9;
   top: 0px;
+  z-index: 9;
 }
 .option_menu{
   font-family: Montserrat, Arial;
   color:white;
   display:inline-block;
-  margin:3%;
+  margin:2.5%;
   letter-spacing: 5px;
 }
 .welcome{
   text-align: center;
+  height: 530px;
 }
 .welcome-image{
   width:100%;
@@ -45,14 +49,20 @@ a{
   margin-left: 43%;
   margin-right: 43%;
   color: white;
+  left: 0px;
   padding-right: 20px;
   padding-left: 20px;
   font-weight: 900;
+  border: none;
   background-color: #FF5722;
 }
 footer{
+  position: absolute;
   background-color: black;
+  margin-top: 100px;
+  width: 100%;
 }
+
 .footer_text{
   padding-right:25%;
   color:white;
@@ -71,8 +81,89 @@ footer{
 .result{
   margin-left: 10%;
   margin-top:100px;
+  border-bottom:solid 0.5px grey;
 }
 
 .question{
-font-style: italic;
+  font-style: italic;
+}
+
+.in{
+  display:inline-block;
+}
+
+.result_title{
+  margin-right:10px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.group{
+  margin-top:10px;
+}
+
+.hs{
+  margin-top:100px;
+  font-size:20px;
+  letter-spacing: 5px;
+  color:orange;
+}
+
+.nickname{
+  margin-top: 40px;
+  font-size: 15px;
+  font-weight: 700;
+  margin-right: 10px;
+  letter-spacing: 2px;
+}
+
+.box{
+  margin-top:0px;
+  padding-top:100px;
+  top:0px;
+  background-color: #0e0e0e;
+  color:white;
+  height: 750px;
+  margin-bottom:-50px;
+}
+
+.frm{
+  background-color: orange;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+  padding:40px;
+  width:70%;
+  z-index: 3;
+position:absolute;
+  margin-top:-400px;
+}
+.question_asked{
+  margin-bottom: 25px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  color:#9c5800;
+}
+
+.the_question{
+  margin-bottom: 20px;
+  font-size: 20px;
+  letter-spacing: 5px;
+  font-weight: 600;
+}
+
+.the_answer{
+  margin-bottom:25px;
+  font-size: 17px;
+  letter-spacing: 3px;
+}
+.the_button{
+  margin-right: 10px;
+  border:none;
+  background-color: black;
+  color:white;
+  font-size: 15px;
+  padding:2px;
+  padding-right:35px;
+  padding-left:35px;
+
 }

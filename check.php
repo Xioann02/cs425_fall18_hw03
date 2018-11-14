@@ -4,10 +4,10 @@ $level2=array("a", "d", "c", "b","a","d","b","a","b","d","c","a","b","a","d","c"
 $level3=array("c", "c", "a", "c","b","c","c","b","a","c","d","b","a","a","b","a","b","b","b","c","b","c","a","c","a");
 
 $s=0;
-$c="  -Your anser was right!";
-
+$c=PHP_EOL."Your answer was right.";
 $file = fopen("score.txt","r");
-$score=fgetc($file);
+$score=fgets($file);
+
 fclose($file);
 $file = fopen("game.txt","r");
 $level= fgetc($file);
@@ -26,8 +26,7 @@ if($level==1){
   $score=$score+1;
   $s=1;
   $level=2;}
-  else $c="  -Your anser was wrong!";
-
+  else $c=PHP_EOL."Your answer was wrong.";
 }
 else if($level==2){
   $r=$level2[$rand];
@@ -35,7 +34,7 @@ else if($level==2){
   $score=$score+2;
   $s=2;
   $level=3;}
-  else{ $c="  -Your anser was wrong!"; $level=1;}
+  else{ $c=PHP_EOL."Your answer was wrong."; $level=1;}
 }
 else if($level==3){
   $r=$level3[$rand];
@@ -43,30 +42,25 @@ else if($level==3){
   $score=$score+3;
   $s=3;
     $level=3;}
-    else{ $c="  -Your anser was wrong!"; $level=2;}
+    else{ $c=PHP_EOL."Your answer was wrong."; $level=2;}
 }
 
-$a="YOUR ANSWER: ";
-$re="CORRECT ANSWER: ";
-$line="_________________________________________";
 $myfile = fopen("result.txt", "a");
-fwrite($myfile, $a );
+// fwrite($myfile, $a );
 fwrite($myfile, $answer );
 fwrite($myfile,PHP_EOL);
-fwrite($myfile, $re );
+// fwrite($myfile, $re );
 fwrite($myfile, $r );
 fwrite($myfile,PHP_EOL);
-fwrite($myfile,"LEVEL: ");
 fwrite($myfile,$l);
 fwrite($myfile,PHP_EOL);
-fwrite($myfile,"SCORE OF CURRENT LEVEL: ");
 fwrite($myfile,$s);
 fwrite($myfile,$c);
 fwrite($myfile,PHP_EOL);
-fwrite($myfile, $line);
 fwrite($myfile,PHP_EOL);
 fwrite($myfile,PHP_EOL);
 fwrite($myfile,PHP_EOL);
+
 fclose($myfile);
 $counter++;
 }
@@ -84,8 +78,18 @@ if(isset($_POST['finish'])){
   fwrite($myfile, 5);
   fwrite($myfile, 0);
   fclose($myfile);
+  $myfile = fopen("result.txt", "a");
+  fwrite($myfile,"-");
+  fwrite($myfile,PHP_EOL);
+  fwrite($myfile,"-");
+  fwrite($myfile,PHP_EOL);
+  fwrite($myfile,$l);
+  fwrite($myfile,PHP_EOL);
+  fwrite($myfile,0);
+  fwrite($myfile,PHP_EOL);
+  fwrite($myfile,PHP_EOL);
+  fclose($myfile);
 }
-
 header("Location: /index.php");
 
 ?>
