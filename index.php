@@ -6,10 +6,13 @@
   <title>Game Homepage</title>
   <meta name="description" content="">
   <meta name="keywords" content="game, questions, score, levels, trivia">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
 
   <!-- <link rel="shortcut icon" href="favicon6.ico" type="image/x-icon">
   <link rel="icon" href="favicon6.ico" type="image/x-icon"> -->
+
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 
 
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -22,31 +25,28 @@
     <a  href="highscores.php"class="option_menu">SCORES</a>
   </div>
   <div class="welcome">
-    <div class="title">WELCOME TO QUESTIONS GAME</div>
+    <div class="title">THE QUESTIONS GAME</div>
+
     <form  class=''method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" >
       <?php
       $myfile = fopen("start.txt", "r");
       $c=fgetc($myfile);
       fclose($myfile);
-      if($c<0|| $c==0 || $c=="")echo" <button name='start' class='sub title'>START </button>";?>
+      if($c<0|| $c==0 || $c=="")echo" <button name='start' class='sub title'>START A GAME </button>";?>
     </form>
 
-      <!-- <img class="welcome-image" src=""> -->
+       <!-- <img class="welcome-image" src="abstract-art-background-1037995.jpg"/> -->
     </div>
     <?php
-    if(isset($_POST['start'])){
-      $myfile = fopen("start.txt", "w");
-      fwrite($myfile, 1);
-      fclose($myfile);
-    }
     $file = fopen("start.txt","r");
     $start=fgetc($file);
     fclose($file);
-    if($start==1){
-      $file = fopen("score.txt", "w");
-      fwrite($file, 0);
-      fclose($file);
-      $rand=rand(1, 25);
+    if(isset($_POST['start'])){
+      $myfile = fopen("start.txt", "w");
+      fwrite($myfile, 2);
+      fclose($myfile);
+
+      $rand=rand(1, 24);
       $que=$rand+1;
       $myfile = fopen("game.txt", "w");
       fwrite($myfile, 2);
@@ -144,7 +144,7 @@
           echo "<input type='radio' name='answer' value='d' >";
           echo $xml->stage1[$rand]->d . "<br>";
           echo "</div>";
-          echo "<button class='the_button' name='toanswer'>NEXT</button>";
+          if($count!=5)echo "<button class='the_button' name='toanswer'>NEXT</button>";
           echo "<button class='the_button' name='finish'>FINISH</button>";
           echo"</form></div>";
           $q="(".$count.")QUESTION: ";
@@ -180,7 +180,7 @@
             echo "<input type='radio' name='answer' value='d' >";
             echo $xml->stage2[$rand]->d . "<br>";
             echo "</div>";
-            echo "<button class='the_button' name='toanswer'>NEXT</button>";
+            if($count!=5)echo "<button class='the_button' name='toanswer'>NEXT</button>";
             echo "<button class='the_button' name='finish'>FINISH</button>";
             echo"</form></div>";
             $q="(".$count.")QUESTION: ";
@@ -215,7 +215,7 @@
               echo "<input type='radio' name='answer' value='d' >";
               echo $xml->stage3[$rand]->d . "<br>";
               echo "</div>";
-              echo "<button  class='the_button' name='toanswer'>NEXT</button>";
+              if($count!=5)echo "<button class='the_button' name='toanswer'>NEXT</button>";
               echo "<button  class='the_button' name='finish'>FINISH</button>";
               echo"</form></div>";
               $q="(".$count.")QUESTION: ";
@@ -229,9 +229,11 @@
               $file = fopen("score.txt","r");
               $score= fgets($file);
               fclose($file);
+              if($score==""){$score=0;}
               $myfile = fopen("result.txt", "a");
               fwrite($myfile, "TOTAL SCORE: " );
               fwrite($myfile, $score );
+
               fwrite($myfile,PHP_EOL);
               fwrite($myfile, "(Max score: 14) " );
               fwrite($myfile,PHP_EOL);
@@ -241,6 +243,7 @@
               <?php
               $file=fopen("result.txt","r" );
               $num=1;
+              echo "<div class='your_res'>YOUR RESULTS</div>";
               while(!feof($file) && $num<6)
                 {
                 echo "<div><div class='in' style='margin-right:3px;'>".$num.".</div>";
@@ -254,24 +257,24 @@
                 echo "<div class='group'><div class='in result_title'>Score of current question:</div>";
                 echo "<div class='in'>".fgets($file). "<br></div></div>";
                 echo "<div class='group' style='color:grey;'>".fgets($file). "<br></div>";
-                echo "<div class=''>".fgets($file). "<br></div>";
+                echo "<div class='total'>".fgets($file). "<br></div>";
                 echo "<div class=''>".fgets($file). "<br></div>";
                 echo "<div class=''>".fgets($file). "<br></div>";
                 $num++;
                 }
-                echo "<div class=''>".PHP_EOL.fgets($file). "<br></div>";
+                echo "<div class='total'>".PHP_EOL.fgets($file). "<br></div>";
                 echo "<div class=''>".fgets($file). "<br></div>";
                 fclose($file);
                 ?>
               </div>
               <?php
               echo"
-              <div class='start'>
+              <div class='savescore'>
               <form  method='post' action='scores.php' >
               <div >Do you want to save your score?</div>
-              <input type='input' name='nickname' placeholder='Your nickname..'>
-              <button name='save'>SAVE</button>
-              <button name='no'>NO THANKS</button>
+              <input type='input' class='nickname_input' name='nickname' placeholder='Your nickname..'>
+              <button class='save_button'name='save'>SAVE</button>
+              <button class='save_button' name='no'>NO THANKS</button>
               </form>
               </div>";
               file_put_contents("result.txt", "");
@@ -281,16 +284,10 @@
           }
           ?>
 
-
-
-
-
           <footer>
-            <div>
-  <h1 id="scroll">Title</h1>
-</div>
             <div id="contact" class="footer_text">Copyright © Question Games</div>
             <a  class="footer_text"href="">Terms & Conditions</a>
+            <div class="footer_text" style="padding-right:1%;">Tel.: +357 123456</div>
           </footer>
         </body>
         <!-- <script src="js.js"></script> -->

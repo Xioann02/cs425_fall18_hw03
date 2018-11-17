@@ -10,6 +10,7 @@ if(isset($_POST['save'])){
   $bool=1;
   $prev=14;
   $pos=0;
+
   while(!feof($file)){
     if($count%2==0)
     fgets($file);
@@ -18,7 +19,8 @@ if(isset($_POST['save'])){
     if($thisscore>$score && $score<$prev){
       $prev=$score;
       $bool=0;
-      $pos=$count;}
+      $pos=$count;
+    }
   }
 $count++;}
   $ar=array();
@@ -44,7 +46,14 @@ $ar[$pos]=$thisscore.PHP_EOL;
   }
   file_put_contents("score.txt", "");
 
-header("Location: /index.php");
+     if( $bool==0 ){
+       header('Refresh:2; url=index.php');
+       echo 'Your score was saved in high scores';
+}
+     else{
+       header('Refresh:2; url=index.php');
+       echo 'Your score could not be saved in high scores.';}
+
 }
 
 if(isset($_POST['no'])){

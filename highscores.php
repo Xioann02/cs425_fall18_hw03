@@ -25,7 +25,7 @@
 <?php
 $file=fopen("bestscores.txt","r");
 $counter=0;
-while(!feof($file)){
+while(!feof($file) && $counter<10){
 $counter++;
 echo "<div class=''><div class='in nickname'>".$counter.". ".fgets($file)." :</div>";
 echo "<div class='in'>".fgets($file)."</div></div>";
@@ -34,9 +34,13 @@ echo "<div class='in'>".fgets($file)."</div></div>";
 </div>
 
 
-  <footer>
-    <div class="footer_text">Copyright © Question Games</div>
-    <a  class="footer_text"href="">Terms & Conditions</a>
-  </footer>
+
+          <footer>
+
+            <div id="contact" class="footer_text">Copyright © Question Games</div>
+            <a  class="footer_text"href="">Terms & Conditions</a>
+            <div class="footer_text" style="padding-right:1%;">Tel.: +357 123456</div>
+
+          </footer>
 </body>
 </html>
