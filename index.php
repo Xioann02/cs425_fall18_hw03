@@ -16,7 +16,7 @@
 <body>
   <div class="menu">
     <form class='in'method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" >
-    <button style='background-color:transparent; border:none; font-size:1.3vw;' class="option_menu " name='playagain'  >PLAY</button>
+    <button style='background-color:transparent; border:none;letter-spacing: 7px;font-size:13px;' class="option_menu " name='playagain'  >PLAY</button>
     </form>
     <a  href="help.php" class="option_menu in">HELP</a>
     <a  href="highscores.php"class="option_menu in">SCORES</a>
