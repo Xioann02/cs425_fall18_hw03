@@ -7,22 +7,14 @@
   <meta name="description" content="">
   <meta name="keywords" content="game, questions, score, levels, trivia">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
-
   <!-- <link rel="shortcut icon" href="favicon6.ico" type="image/x-icon">
   <link rel="icon" href="favicon6.ico" type="image/x-icon"> -->
-
   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-
-
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-
   <div class="menu">
-
     <form class='in'method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" >
     <button style='background-color:transparent; border:none; font-size:1.3vw;' class="option_menu " name='playagain'  >PLAY</button>
     </form>
@@ -39,32 +31,39 @@
       fclose($myfile);
       if($c<0|| $c==0 || $c=="")echo" <button name='start' class='sub title'>START A GAME </button>";?>
     </form>
-
        <!-- <img class="welcome-image" src="abstract-art-background-1037995.jpg"/> -->
     </div>
-
     <?php
     if(isset($_POST['playagain'])){
       file_put_contents("result.txt", "");
       file_put_contents("game.txt", "");
       file_put_contents("start.txt", "");
       file_put_contents("score.txt", "");
-
 }
     ?>
-
-
     <?php
+    $rand11=0;
+    $rand22=0;
+    $rand33=0;
     $file = fopen("start.txt","r");
     $start=fgetc($file);
     fclose($file);
+    $rand=rand(0, 24);
+    $que=$rand+1;
+
+
+
+
+?>
+
+
+
+<?php
+
     if(isset($_POST['start'])){
       $myfile = fopen("start.txt", "w");
       fwrite($myfile, 2);
       fclose($myfile);
-
-      $rand=rand(1, 24);
-      $que=$rand+1;
       $myfile = fopen("game.txt", "w");
       fwrite($myfile, 2);
       fwrite($myfile, 0);
@@ -73,8 +72,15 @@
       $myfile = fopen("start.txt", "w");
       fwrite($myfile, 2);
       fclose($myfile);
+
+      $file=fopen("rand2.txt","a");
+      fwrite($file," ");
+      fwrite($file,$rand);
+      fclose($file);
       $xml=simplexml_load_file("questions.xml") or die("Error: Cannot create object");
       echo "<div class='frm start'><form  method='post' action='check.php' > ";
+      echo "<input type='hidden'  name='rand'  value='".$rand."'/>";
+      echo "<input type='hidden'  name='round' value='2'/>";
       echo"<div class='question_asked'>";
       echo "QUESTION: 1 out of 5";
       echo"</div>";
@@ -102,15 +108,6 @@
       echo"</form></div>";
       $q="(1)QUESTION: ";
       $myfile = fopen("result.txt", "a");
-      // fwrite($myfile, "----WELCOME TO GAME!----" );
-      // fwrite($myfile,PHP_EOL);
-      // fwrite($myfile, "      --Game results--" );
-      // fwrite($myfile,PHP_EOL);
-      // fwrite($myfile,PHP_EOL);
-      //fwrite($myfile, $q );
-      fwrite($myfile, $xml->stage2[$rand]->question);
-      fwrite($myfile,PHP_EOL);
-      fclose($myfile);
     }
     if($start==2){
       $file = fopen("game.txt","r");
@@ -123,7 +120,7 @@
         $rand=($rand*10)+$rand2;
       }
       if($counter<5){
-        $rand=rand(1, 24);
+        $rand=rand(0, 24);
         $que=$rand+1;
         $file = fopen("game.txt","r");
         $level= fgetc($file);
@@ -136,12 +133,28 @@
         fwrite($myfile, $rand);
         fwrite($myfile, "");
         fclose($myfile);
+
         if($level==1){
+          $file=fopen("rand1.txt","r");
+          $getr=fgets($file);
+          fclose($file);
+
+          $prevq=array();
+          $prevq = explode(" ", $getr);
+
+          while(in_array($rand, $prevq)){
+            $rand=rand(0, 24);
+            $que=$rand+1;
+          }
+          $file=fopen("rand1.txt","a");
+          fwrite($file," ");
+          fwrite($file,$rand);
+          fclose($file);
+
           $xml=simplexml_load_file("questions.xml") or die("Error: Cannot create object");
           echo "<div class='frm start'><form  method='post' action='check.php' > ";
           echo "<input type='hidden'  name='rand'  value='".$rand."'/>";
           echo "<input type='hidden'  name='round' value='1'/>";
-
           echo"<div class='question_asked'>";
           echo "QUESTION: ".$count." out of 5\n<br>";
           echo"</div>";
@@ -167,17 +180,25 @@
           if($count!=5){echo "<button class='the_button' name='toanswer'>NEXT</button>";
           echo "<button  class='the_button' name='finish'>FINISH</button>";}
           else echo "<button class='the_button' name='toanswer'>FINISH</button>";
-
           echo"</form></div>";
-          // $q="(".$count.")QUESTION: ";
-          // $myfile = fopen("result.txt", "a");
-          // //fwrite($myfile, $q );
-          // fwrite($myfile, $xml->stage1[$rand]->question);
-          // fwrite($myfile,PHP_EOL);
-          // fclose($myfile);
         }
 
           if($level==2){
+            $file=fopen("rand2.txt","r");
+            $getr=fgets($file);
+            fclose($file);
+            $prevq=array();
+            $prevq = explode(" ", $getr);
+
+            while(in_array($rand, $prevq)){
+              $rand=rand(0, 24);
+              $que=$rand+1;
+            }
+            $file=fopen("rand2.txt","a");
+            fwrite($file," ");
+            fwrite($file,$rand);
+            fclose($file);
+
             $xml=simplexml_load_file("questions.xml") or die("Error: Cannot create object");
             echo "<div class='frm start'><form  method='post' action='check.php' > ";
             echo "<input type='hidden'  name='rand' value='".$rand."'/>";
@@ -209,16 +230,23 @@
             else echo "<button class='the_button' name='toanswer'>FINISH</button>";
 
             echo"</form></div>";
-            // $q="(".$count.")QUESTION: ";
-            // $myfile = fopen("result.txt", "a");
-            // //fwrite($myfile, $q );
-            // fwrite($myfile, $xml->stage2[$rand]->question);
-            // fwrite($myfile,PHP_EOL);
-            // fclose($myfile);
-
-          }
+            }
 
             if($level==3){
+              $file=fopen("rand3.txt","r");
+              $getr=fgets($file);
+              fclose($file);
+              $prevq=array();
+$prevq = explode(" ", $getr);
+              while(in_array($rand, $prevq)){
+                $rand=rand(0, 24);
+                $que=$rand+1;
+              }
+              $file=fopen("rand3.txt","a");
+              fwrite($file," ");
+              fwrite($file,$rand);
+              fclose($file);
+
               $xml=simplexml_load_file("questions.xml") or die("Error: Cannot create object");
               echo "<div class='frm start'><form  method='post' action='check.php' > ";
               echo "<input type='hidden' name='rand' value='".$rand."'/>";
@@ -248,15 +276,7 @@
               if($count!=5){echo "<button class='the_button' name='toanswer'>NEXT</button>";
               echo "<button  class='the_button' name='finish'>FINISH</button>";}
               else echo "<button class='the_button' name='toanswer'>FINISH</button>";
-
-
               echo"</form></div>";
-              // $q="(".$count.")QUESTION: ";
-              // $myfile = fopen("result.txt", "a");
-              // //fwrite($myfile, $q );
-              // fwrite($myfile, $xml->stage3[$rand]->question);
-              // fwrite($myfile,PHP_EOL);
-              // fclose($myfile);
             }
             }
             if($counter==5){
@@ -267,7 +287,6 @@
               $myfile = fopen("result.txt", "a");
               fwrite($myfile, "TOTAL SCORE: " );
               fwrite($myfile, $score );
-
               fwrite($myfile,PHP_EOL);
               fwrite($myfile, "(Max score: 14) " );
               fwrite($myfile,PHP_EOL);
@@ -280,8 +299,8 @@
               echo "<div class='your_res'>YOUR RESULTS</div>";
               while(!feof($file) && $num<6)
                 {
-                echo "<div><div class='in' style='margin-right:3px;'>".$num.".</div>";
-                echo "<div class='question in'>".fgets($file). "<br></div></div>";
+                echo "<div>";
+                echo "<div  style=''class='question in'>".$num.".".fgets($file). "<br></div></div>";
                 echo "<div class='group'><div class='in result_title'>Your answer:</div>";
                 echo "<div class='in'>".fgets($file). "<br></div></div>";
                 echo "<div class='group'><div class='in result_title'>Correct answer:</div>";
@@ -314,6 +333,10 @@
               file_put_contents("result.txt", "");
               file_put_contents("game.txt", "");
               file_put_contents("start.txt", "");
+              file_put_contents("rand1.txt", "");
+              file_put_contents("rand2.txt", "");
+              file_put_contents("rand3.txt", "");
+
 
             }
           }
@@ -325,6 +348,4 @@
             <div class="footer_text" style="padding-right:1%;">Tel.: +357 123456</div>
           </footer>
         </body>
-        <!-- <script src="js.js"></script> -->
-
         </html>

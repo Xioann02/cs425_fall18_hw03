@@ -34,10 +34,6 @@ fwrite($myfile,PHP_EOL);
 fclose($myfile);
 }
 
-
-
-
-
 if(isset($_POST['toanswer'])){
   $answer = $_POST['answer'];
 if($level==1){
@@ -110,7 +106,6 @@ if(isset($_POST['finish'])){
   fwrite($myfile,PHP_EOL);
   fclose($myfile);
 }
-
 
 header("Location: /index.php");
 

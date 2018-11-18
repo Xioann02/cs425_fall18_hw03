@@ -27,8 +27,14 @@ $file=fopen("bestscores.txt","r");
 $counter=0;
 while(!feof($file) && $counter<10){
 $counter++;
-echo "<div class=''><div class='in nickname'>".$counter.". ".fgets($file)." :</div>";
+if($counter%2!=0){
+echo "<div class='' style='width: 90%; margin-left: 5%;background-color:grey;'><div class='in nickname'>".$counter.". ".fgets($file)." :</div>";
 echo "<div class='in'>".fgets($file)."</div></div>";
+}
+else{
+  echo "<div class='' style='width: 90%; margin-left: 5%;background-color:#aaaaaa;' ><div class='in nickname'>".$counter.". ".fgets($file)." :</div>";
+  echo "<div class='in'>".fgets($file)."</div></div>";
+}
 }
 ?>
 </div>
