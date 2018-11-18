@@ -18,6 +18,26 @@ $l=$level;
 if($rand2!=""){
   $rand=($rand*10)+$rand2;
 }
+
+$xml=simplexml_load_file("questions.xml") or die("Error: Cannot create object");
+if(isset($_POST['rand'])){
+$rand=$_POST['rand'];
+$round=$_POST['round'];
+$myfile = fopen("result.txt", "a");
+if($round==1)
+fwrite($myfile, $xml->stage1[intval($rand)]->question);
+else if($round==2)
+fwrite($myfile, $xml->stage2[intval($rand)]->question);
+else if($round==3)
+fwrite($myfile, $xml->stage3[intval($rand)]->question);
+fwrite($myfile,PHP_EOL);
+fclose($myfile);
+}
+
+
+
+
+
 if(isset($_POST['toanswer'])){
   $answer = $_POST['answer'];
 if($level==1){
@@ -90,6 +110,8 @@ if(isset($_POST['finish'])){
   fwrite($myfile,PHP_EOL);
   fclose($myfile);
 }
+
+
 header("Location: /index.php");
 
 ?>

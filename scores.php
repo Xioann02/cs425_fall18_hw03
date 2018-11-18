@@ -44,13 +44,14 @@ $ar[$pos]=$thisscore.PHP_EOL;
     }
     fclose($file);
   }
-  file_put_contents("score.txt", "");
 
      if( $bool==0 ){
+
        header('Refresh:2; url=index.php');
        echo 'Your score was saved in high scores';
 }
      else{
+
        header('Refresh:2; url=index.php');
        echo 'Your score could not be saved in high scores.';}
 

@@ -19,10 +19,15 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+
   <div class="menu">
-    <a  href="index.php" class="option_menu">PLAY</a>
-    <a  href="help.php" class="option_menu">HELP</a>
-    <a  href="highscores.php"class="option_menu">SCORES</a>
+
+    <form class='in'method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" >
+    <button style='background-color:transparent; border:none; font-size:1.3vw;' class="option_menu " name='playagain'  >PLAY</button>
+    </form>
+    <a  href="help.php" class="option_menu in">HELP</a>
+    <a  href="highscores.php"class="option_menu in">SCORES</a>
   </div>
   <div class="welcome">
     <div class="title">THE QUESTIONS GAME</div>
@@ -37,6 +42,18 @@
 
        <!-- <img class="welcome-image" src="abstract-art-background-1037995.jpg"/> -->
     </div>
+
+    <?php
+    if(isset($_POST['playagain'])){
+      file_put_contents("result.txt", "");
+      file_put_contents("game.txt", "");
+      file_put_contents("start.txt", "");
+      file_put_contents("score.txt", "");
+
+}
+    ?>
+
+
     <?php
     $file = fopen("start.txt","r");
     $start=fgetc($file);
@@ -122,6 +139,9 @@
         if($level==1){
           $xml=simplexml_load_file("questions.xml") or die("Error: Cannot create object");
           echo "<div class='frm start'><form  method='post' action='check.php' > ";
+          echo "<input type='hidden'  name='rand'  value='".$rand."'/>";
+          echo "<input type='hidden'  name='round' value='1'/>";
+
           echo"<div class='question_asked'>";
           echo "QUESTION: ".$count." out of 5\n<br>";
           echo"</div>";
@@ -144,20 +164,24 @@
           echo "<input type='radio' name='answer' value='d' >";
           echo $xml->stage1[$rand]->d . "<br>";
           echo "</div>";
-          if($count!=5)echo "<button class='the_button' name='toanswer'>NEXT</button>";
-          echo "<button class='the_button' name='finish'>FINISH</button>";
+          if($count!=5){echo "<button class='the_button' name='toanswer'>NEXT</button>";
+          echo "<button  class='the_button' name='finish'>FINISH</button>";}
+          else echo "<button class='the_button' name='toanswer'>FINISH</button>";
+
           echo"</form></div>";
-          $q="(".$count.")QUESTION: ";
-          $myfile = fopen("result.txt", "a");
-          //fwrite($myfile, $q );
-          fwrite($myfile, $xml->stage1[$rand]->question);
-          fwrite($myfile,PHP_EOL);
-          fclose($myfile);
+          // $q="(".$count.")QUESTION: ";
+          // $myfile = fopen("result.txt", "a");
+          // //fwrite($myfile, $q );
+          // fwrite($myfile, $xml->stage1[$rand]->question);
+          // fwrite($myfile,PHP_EOL);
+          // fclose($myfile);
         }
 
           if($level==2){
             $xml=simplexml_load_file("questions.xml") or die("Error: Cannot create object");
             echo "<div class='frm start'><form  method='post' action='check.php' > ";
+            echo "<input type='hidden'  name='rand' value='".$rand."'/>";
+            echo "<input type='hidden' name='round' value='2'/>";
             echo"<div class='question_asked'>";
             echo "QUESTION: ".$count." out of 5\n<br>";
             echo"</div>";
@@ -166,7 +190,7 @@
             echo "</div>";
             echo "<div class='the_answer'>";
             echo "<input type='radio' name='answer' value='a' >";
-            echo $xml->stage1[$rand]->a . "<br>";
+            echo $xml->stage2[$rand]->a . "<br>";
             echo "</div>";
             echo "<div class='the_answer'>";
             echo "<input type='radio' name='answer' value='b' >";
@@ -180,19 +204,25 @@
             echo "<input type='radio' name='answer' value='d' >";
             echo $xml->stage2[$rand]->d . "<br>";
             echo "</div>";
-            if($count!=5)echo "<button class='the_button' name='toanswer'>NEXT</button>";
-            echo "<button class='the_button' name='finish'>FINISH</button>";
+            if($count!=5){echo "<button class='the_button' name='toanswer'>NEXT</button>";
+            echo "<button  class='the_button' name='finish'>FINISH</button>";}
+            else echo "<button class='the_button' name='toanswer'>FINISH</button>";
+
             echo"</form></div>";
-            $q="(".$count.")QUESTION: ";
-            $myfile = fopen("result.txt", "a");
-            //fwrite($myfile, $q );
-            fwrite($myfile, $xml->stage2[$rand]->question);
-            fwrite($myfile,PHP_EOL);
-            fclose($myfile);}
+            // $q="(".$count.")QUESTION: ";
+            // $myfile = fopen("result.txt", "a");
+            // //fwrite($myfile, $q );
+            // fwrite($myfile, $xml->stage2[$rand]->question);
+            // fwrite($myfile,PHP_EOL);
+            // fclose($myfile);
+
+          }
 
             if($level==3){
               $xml=simplexml_load_file("questions.xml") or die("Error: Cannot create object");
               echo "<div class='frm start'><form  method='post' action='check.php' > ";
+              echo "<input type='hidden' name='rand' value='".$rand."'/>";
+              echo "<input type='hidden'  name='round' value='3'/>";
               echo"<div class='question_asked'>";
               echo "QUESTION: ".$count." out of 5\n<br>";
               echo"</div>";
@@ -215,15 +245,19 @@
               echo "<input type='radio' name='answer' value='d' >";
               echo $xml->stage3[$rand]->d . "<br>";
               echo "</div>";
-              if($count!=5)echo "<button class='the_button' name='toanswer'>NEXT</button>";
-              echo "<button  class='the_button' name='finish'>FINISH</button>";
+              if($count!=5){echo "<button class='the_button' name='toanswer'>NEXT</button>";
+              echo "<button  class='the_button' name='finish'>FINISH</button>";}
+              else echo "<button class='the_button' name='toanswer'>FINISH</button>";
+
+
               echo"</form></div>";
-              $q="(".$count.")QUESTION: ";
-              $myfile = fopen("result.txt", "a");
-              //fwrite($myfile, $q );
-              fwrite($myfile, $xml->stage3[$rand]->question);
-              fwrite($myfile,PHP_EOL);
-              fclose($myfile);}
+              // $q="(".$count.")QUESTION: ";
+              // $myfile = fopen("result.txt", "a");
+              // //fwrite($myfile, $q );
+              // fwrite($myfile, $xml->stage3[$rand]->question);
+              // fwrite($myfile,PHP_EOL);
+              // fclose($myfile);
+            }
             }
             if($counter==5){
               $file = fopen("score.txt","r");
@@ -280,6 +314,7 @@
               file_put_contents("result.txt", "");
               file_put_contents("game.txt", "");
               file_put_contents("start.txt", "");
+
             }
           }
           ?>
