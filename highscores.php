@@ -18,6 +18,7 @@
     <a  href="help.php" class="option_menu">HELP</a>
     <a  href="highscores.php"class="option_menu">SCORES</a>
   </div>
+  <a name="top"></a>
 
 <div class='welcome box'>
   <div class='hs'>HIGH SCORES</div>
@@ -39,6 +40,7 @@ else{
 ?>
 </div>
 
+<a href="#top" class=''><i class="top"></i></a>
 
 
           <footer>

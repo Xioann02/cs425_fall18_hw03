@@ -19,6 +19,8 @@
     <a  href="highscores.php"class="option_menu">SCORES</a>
   </div>
 
+  <a name="top"></a>
+
 
   <div class='welcome box help' style='text-align:left; margin-left:2%;'>
     <div class='hs hl'>Game rules</div>
@@ -95,6 +97,9 @@
 
   </div>
 
+
+
+  <a href="#top" class=''><i class="top"></i></a>
 
 
   <footer>

@@ -21,7 +21,10 @@
     <a  href="help.php" class="option_menu in">HELP</a>
     <a  href="highscores.php"class="option_menu in">SCORES</a>
   </div>
+  <a name="top"></a>
+
   <div class="welcome">
+
     <div class="title">THE QUESTIONS GAME</div>
 
     <form  class=''method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" >
@@ -342,7 +345,10 @@ $prevq = explode(" ", $getr);
           }
           ?>
 
-          <footer>
+          <a href="#top" class=''><i class="top"></i></a>
+
+
+          <footer style='margin-top: 230px;'>
             <div id="contact" class="footer_text">Copyright © Question Games</div>
             <a  class="footer_text"href="">Terms & Conditions</a>
             <div class="footer_text" style="padding-right:1%;">Tel.: +357 123456</div>
