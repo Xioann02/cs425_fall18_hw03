@@ -16,13 +16,16 @@ if(isset($_POST['save'])){
     fgets($file);
     else{
       $score=fgets($file);
-      if($thisscore>$score && $score<$prev){
-        $prev=$score;
+      if(((int)$thisscore>(int)$score) && ((int)$score<$prev)){
+        $prev=(int)$score;
         $bool=0;
         $pos=$count;
+
       }
     }
     $count++;}
+
+
     $ar=array();
     fclose($file);
     if($bool==0){
