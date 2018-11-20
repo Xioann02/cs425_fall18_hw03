@@ -21,9 +21,9 @@
   <div class='welcome box'>
     <div class='hs'>HIGH SCORES</div>
     <?php
-    $file=fopen("bestscores.txt","r");
+    $file=fopen("allscores.txt","r");
     $counter=0;
-    while(!feof($file) && $counter<10){
+    while(!feof($file)){
       $counter++;
       if($counter%2!=0){
         echo "<div class='' style='width: 90%; margin-left: 5%; height:10%;background-color:grey;'><div class='in nickname'>".$counter.". ".fgets($file)." :</div>";
