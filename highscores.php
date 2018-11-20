@@ -37,7 +37,7 @@
     ?>
   </div>
   <a href="#top" class=''><i class="top"></i></a>
-  <footer style='margin-top: 230px;'>
+  <footer style='margin-top: 75%;'>
     <div>
       <div id="contact" class="footer_text in">Copyright © Question Games</div>
       <a  class="footer_text in"href="">Terms & Conditions</a>

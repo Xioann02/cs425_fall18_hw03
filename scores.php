@@ -51,11 +51,21 @@ $thisscore=$thisscore.PHP_EOL;
     }
     else break;
     }
-    if($v==0){
+
+    if(count($points)==0){
+      $points[0]=$thisscore;
+      $nick[0]=$nickname;
+      $bool=0;
+
+    }
+
+    else if($v==0){
       $points[count($points)-1]=$thisscore;
       $nick[count($points)-1]=$nickname;
       $bool=0;
+      $v=1;
     }
+
 
 fclose($allfile);
 $allfile=fopen("allscores.txt","w");
